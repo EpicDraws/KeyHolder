@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "KeyHolder"
-  s.version      = "3.0.1"
+  s.version      = "3.0.2"
   s.summary      = "Record shortcuts in macOS, like Alfred app."
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.homepage     = "https://github.com/Clipy/KeyHolder"
@@ -10,5 +10,5 @@ Pod::Spec.new do |s|
   s.source_files = 'Lib/KeyHolder/*.swift'
   s.resource_bundles = { 'KeyHolder' => ['Lib/KeyHolder/Resources/*.png'] }
   s.frameworks   = 'Carbon', 'Cocoa'
-  s.dependency 'Magnet', '~> 2.3'
+  s.dependency 'Magnet', :git => 'https://github.com/EpicDraws/Magnet'
 end
